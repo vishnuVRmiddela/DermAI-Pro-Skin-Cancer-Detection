@@ -1,0 +1,302 @@
+/* Modern Color Palette */
+:root {
+    --primary: #4361ee;
+    --primary-light: #4895ef;
+    --primary-dark: #3f37c9;
+    --secondary: #7209b7;
+    --accent: #f72585;
+    --success: #4cc9f0;
+    --warning: #f8961e;
+    --danger: #ef233c;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --gray: #6c757d;
+    --bg-gradient: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+}
+
+/* Base Styles */
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f9fafc;
+    color: var(--dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full-width container */
+.stApp {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--bg-gradient);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    color: #f8f9fa;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+/* Hero Stats */
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    min-width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Cards */
+.upload-card, .info-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.upload-card:hover, .info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.upload-card h3, .info-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-card p, .info-card p {
+    color: var(--gray);
+    margin-bottom: 1.5rem;
+}
+
+/* Steps */
+.steps {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.steps li {
+    margin-bottom: 0.75rem;
+    color: var(--dark);
+}
+
+/* Disease tags */
+.disease-preview {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.disease-tag {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.disease-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    width: 100%;
+    border: 2px dashed #dee2e6;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgba(248, 249, 250, 0.5);
+    transition: all 0.3s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: var(--primary);
+    background: rgba(67, 97, 238, 0.05);
+}
+
+/* Images */
+.stImage {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Metrics */
+[data-testid="metric-container"] {
+    background: white !important;
+    border-radius: 16px !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
+
+[data-testid="metric-container"] label {
+    color: var(--gray) !important;
+    font-size: 0.9rem !important;
+}
+
+[data-testid="metric-container"] div {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    color: var(--dark) !important;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 3rem 2rem 1.5rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-section a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-item {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    [data-testid="stHorizontalBlock"] {
+        flex-direction: column;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.stImage, .upload-card, .info-card, [data-testid="metric-container"] {
+    animation: fadeIn 0.5s ease-out forwards;
+}

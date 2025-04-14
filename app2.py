@@ -244,7 +244,7 @@ st.markdown("""
     <div class="footer-content">
         <div class="footer-section">
             <h4>DermAI Pro</h4>
-            <p>Advanced AI for dermatological analysis</p>
+            <p>Advanced AI for dermatological analysis for cancer detection</p>
         </div>
         <div class="footer-section">
             <h4>Quick Links</h4>
@@ -254,8 +254,9 @@ st.markdown("""
         </div>
         <div class="footer-section">
             <h4>Contact</h4>
-            <p>support@dermai.pro</p>
-            <p>+1 (555) 123-4567</p>
+            <p>vm0017@srmist.edu.in</p>
+            <p>np3448@srmist.edu.in</p>
+            <p>+91 6309010455</p>
         </div>
     </div>
     <div class="footer-bottom">

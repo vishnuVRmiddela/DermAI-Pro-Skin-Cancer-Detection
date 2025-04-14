@@ -108,7 +108,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 📞 Contact
 
 **Project Maintainer:** Vishnu Middela  
-**Email:** [vishnu.middela@example.com](mailto:vishnu.middela@example.com)  
+**Email:** [vm0017@srmist.edu.in](mailto:vishnu.middela@example.com)  
 **LinkedIn:** [https://linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
 
 ## 🙏 Acknowledgments
